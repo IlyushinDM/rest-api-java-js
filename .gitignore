@@ -1,0 +1,28 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package file
+*.jar
+*.war
+*.ear
+
+# Module result file
+*.iml
+*.ipr
+*.iws
+
+# Directory based module format
+.idea/
+
+# Maven target folder
+/target/
+
+# Intellij project files
+*.idea
+
+# Windows thumbnail cache files
+Thumbs.db
+*.DS_Store
