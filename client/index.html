@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образовательное Учреждение</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Система Управления Образовательным Учреждением</h1>
+        <nav id="main-nav">
+            <ul><li><a href="#/login">Вход</a></li></ul>
+        </nav>
+    </div>
+</header>
+
+<main id="app-content" class="container">
+    <p>Загрузка приложения...</p>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Курсовая работа</p>
+    </div>
+</footer>
+
+<!-- 1. Конфигурация и базовые сервисы -->
+<script src="js/config.js"></script>
+<script src="js/apiService.js"></script>
+<script src="js/auth.js"></script>
+
+<!-- 2. Представления (Views) -->
+<script src="js/views/loginView.js"></script>
+<script src="js/views/dashboardView.js"></script>
+<script src="js/views/studentsView.js"></script>
+<script src="js/views/coursesView.js"></script>
+<script src="js/views/enrollmentsView.js"></script>
+<script src="js/views/gradesView.js"></script>
+<script src="js/views/documentsView.js"></script>
+
+<!-- 3. Роутер (зависит от Auth) -->
+<script src="js/router.js"></script>
+
+<!-- 4. Контроллеры (зависят от Views, ApiService, Auth, AppRouter) -->
+<script src="js/controllers/authController.js"></script>
+<script src="js/controllers/studentsController.js"></script>
+<script src="js/controllers/coursesController.js"></script>
+<script src="js/controllers/enrollmentsController.js"></script>
+<script src="js/controllers/gradesController.js"></script>
+<script src="js/controllers/documentsController.js"></script>
+
+<!-- 5. Главный файл приложения (инициализация) -->
+<script src="js/app.js"></script>
+</body>
+</html>

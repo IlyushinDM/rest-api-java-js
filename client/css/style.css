@@ -1,0 +1,362 @@
+/* В css/style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main#app-content {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 40px;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+#app-content {
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+button.secondary {
+    background-color: #f0ad4e;
+}
+button.secondary:hover {
+    background-color: #eea236;
+}
+
+button.danger {
+    background-color: #d9534f;
+}
+button.danger:hover {
+    background-color: #d43f3a;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.form-container h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.course-list, .document-list, .enrollment-list-admin, .grade-list-admin {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-list-item, .document-list-item, .enrollment-list-item-admin, .grade-list-item-admin {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.course-list-item h3, .enrollment-list-item-admin h3, .enrollment-list-item-admin h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #337ab7;
+}
+
+.course-list-item p, .enrollment-list-item-admin p, .document-list-item .doc-info p {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #555;
+}
+.course-list-item p strong, .enrollment-list-item-admin p strong, .document-list-item .doc-info strong {
+    color: #333;
+}
+
+
+.actions, .doc-actions {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button, .doc-actions button {
+    padding: 6px 12px;
+    font-size: 0.9em;
+}
+
+/* Дополнительные отступы для кнопок в общем списке админа */
+.admin-dashboard-links li {
+    margin-bottom: 10px;
+}
+.admin-dashboard-links a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #5bc0de;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.admin-dashboard-links a:hover {
+    background-color: #31b0d5;
+}
+
+
+/* Стили для таблиц, используемых админом */
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #e9ecef; /* Светло-серый фон для заголовков таблицы */
+    color: #495057;
+    font-weight: 600;
+}
+td .admin-action, td .danger, td .secondary { /* Кнопки в ячейках таблицы */
+    margin-right: 5px;
+    margin-bottom: 5px; /* Для случая переноса */
+}
+
+/* Улучшение для кнопок "Детали" в таблице */
+.view-student-details-link, .view-course-details-link {
+    background: none;
+    border: none;
+    color: #337ab7;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+.view-student-details-link:hover, .view-course-details-link:hover {
+    color: #23527c;
+}
+
+
+/* Сообщения */
+.info-message {
+    padding: 10px;
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    color: #31708f;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Пример для .document-list-item, чтобы информация и кнопки были в ряд */
+.document-list-item {
+    display: flex;
+    justify-content: space-between; /* Разносит дочерние элементы по краям */
+    align-items: center; /* Выравнивает по центру вертикально */
+}
+
+.document-list-item .doc-info {
+    flex-grow: 1; /* Позволяет текстовой части занимать доступное пространство */
+}
+
+.document-list-item .doc-actions {
+    border-top: none; /* Убираем верхнюю границу */
+    padding-top: 0;
+    flex-shrink: 0; /* Предотвращает сжатие блока с кнопками */
+}
+
+
+/* Добавим немного отзывчивости для маленьких экранов */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .actions, .doc-actions {
+        flex-direction: column; /* Кнопки в столбик на маленьких экранах */
+    }
+    .actions button, .doc-actions button {
+        width: 100%; /* Кнопки на всю ширину */
+        margin-bottom: 5px;
+    }
+    .document-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .document-list-item .doc-actions {
+        width: 100%;
+        margin-top: 10px;
+    }
+    table, thead, tbody, th, td, tr {
+		display: block;
+	}
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr { border: 1px solid #ccc; margin-bottom: 5px; }
+	td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+	}
+	td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+	}
+    /* Задаем заголовки для ячеек в responsive-таблице */
+    /* Пример для studentsView */
+    #app-content table td:nth-of-type(1):before { content: "ID"; }
+	#app-content table td:nth-of-type(2):before { content: "Имя"; }
+	#app-content table td:nth-of-type(3):before { content: "Фамилия"; }
+	#app-content table td:nth-of-type(4):before { content: "Email"; }
+	#app-content table td:nth-of-type(5):before { content: "Группа"; }
+	#app-content table td:nth-of-type(6):before { content: "Действия"; }
+    /* Пример для enrollmentView (AdminEnrollmentList) */
+    #app-content table td:nth-of-type(1):before { content: "ID"; }
+	#app-content table td:nth-of-type(2):before { content: "Студент"; }
+	#app-content table td:nth-of-type(3):before { content: "Курс"; }
+	#app-content table td:nth-of-type(4):before { content: "Дата записи"; }
+	#app-content table td:nth-of-type(5):before { content: "Действия"; }
+    /* Пример для gradesView (AdminGradeList) */
+    #app-content table td:nth-of-type(1):before { content: "ID"; }
+	#app-content table td:nth-of-type(2):before { content: "Студент"; }
+	#app-content table td:nth-of-type(3):before { content: "Курс"; }
+	#app-content table td:nth-of-type(4):before { content: "Оценка"; }
+	#app-content table td:nth-of-type(5):before { content: "Дата"; }
+    #app-content table td:nth-of-type(6):before { content: "Комментарий"; }
+	#app-content table td:nth-of-type(7):before { content: "Действия"; }
+}
