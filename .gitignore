@@ -1,60 +1,61 @@
 # IntelliJ IDEA
-    .idea/
-    *.iml
-    *.ipr
-    *.iws
-    out/
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
 
-    # Maven
-    target/
-    pom.xml.tag
-    pom.xml.releaseBackup
-    pom.xml.versionsBackup
-    pom.xml.next
-    release.properties
-    server/dependency-reduced-pom.xml
-    buildNumber.properties
-    server/.mvn/timing.properties
-    server/.mvn/wrapper/maven-wrapper.jar
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+server/dependency-reduced-pom.xml
+buildNumber.properties
+server/.mvn/timing.properties
+server/.mvn/wrapper/maven-wrapper.jar
 
-    # Node
-    node_modules/
-    npm-debug.log*
-    yarn-debug.log*
-    yarn-error.log*
-    package-lock.json # Если не хотите его коммитить, но обычно его коммитят
-    yarn.lock # Если используете Yarn
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # Если не хотите его коммитить, но обычно его коммитят
+yarn.lock # Если используете Yarn
 
-    # Logs
-    server/logs/
-    *.log
+# Logs
+/server/logs/
+*.log
 
-    # Compiled files (client)
-    dist/ # Если будете использовать сборщик для клиента
+# Compiled files (client)
+dist/ # Если будете использовать сборщик для клиента
 
-    # OS generated files
-    .DS_Store
-    Thumbs.db
+# OS generated files
+.DS_Store
+Thumbs.db
 
-    # Temporary files
-    *.tmp
-    *~
+# Temporary files
+*.tmp
+*~
 
-    package-lock.json # Можно оставить, если хотите фиксировать версии зависимостей клиента
-    # Или, если не хотите его в репозитории:
-    # package-lock.json
-    # yarn.lock
+package-lock.json # Можно оставить, если хотите фиксировать версии зависимостей клиента
+# Или, если не хотите его в репозитории:
+# package-lock.json
+# yarn.lock
 
-    # Client-side build artifacts (if any, e.g., from Webpack, Parcel)
-    dist/
-    build/
-    .cache/
+# Артифакты на стороне клиента
+dist/
+build/
+.cache/
 
-    # Secrets / Local configuration (example)
-    # server.local.properties
-    # Если у вас есть локальные переопределения конфигурации, которые не должны попадать в репозиторий
-
-    # IDE-specific files for other editors
-    .vscode/
-    *.swp
-    *.swo
+# IDE специальные файлы
+.vscode/
+*.swp
+*.swo
+/.idea/
+/server/uploads/
+/server/temp_uploads/
+/server/src/test/
+/server/src/main/resources/server.properties
