@@ -1,28 +1,60 @@
-# Compiled class file
-*.class
+# IntelliJ IDEA
+    .idea/
+    *.iml
+    *.ipr
+    *.iws
+    out/
 
-# Log file
-*.log
+    # Maven
+    target/
+    pom.xml.tag
+    pom.xml.releaseBackup
+    pom.xml.versionsBackup
+    pom.xml.next
+    release.properties
+    server/dependency-reduced-pom.xml
+    buildNumber.properties
+    server/.mvn/timing.properties
+    server/.mvn/wrapper/maven-wrapper.jar
 
-# Package file
-*.jar
-*.war
-*.ear
+    # Node
+    node_modules/
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
+    package-lock.json # Если не хотите его коммитить, но обычно его коммитят
+    yarn.lock # Если используете Yarn
 
-# Module result file
-*.iml
-*.ipr
-*.iws
+    # Logs
+    server/logs/
+    *.log
 
-# Directory based module format
-.idea/
+    # Compiled files (client)
+    dist/ # Если будете использовать сборщик для клиента
 
-# Maven target folder
-/target/
+    # OS generated files
+    .DS_Store
+    Thumbs.db
 
-# Intellij project files
-*.idea
+    # Temporary files
+    *.tmp
+    *~
 
-# Windows thumbnail cache files
-Thumbs.db
-*.DS_Store
+    package-lock.json # Можно оставить, если хотите фиксировать версии зависимостей клиента
+    # Или, если не хотите его в репозитории:
+    # package-lock.json
+    # yarn.lock
+
+    # Client-side build artifacts (if any, e.g., from Webpack, Parcel)
+    dist/
+    build/
+    .cache/
+
+    # Secrets / Local configuration (example)
+    # server.local.properties
+    # Если у вас есть локальные переопределения конфигурации, которые не должны попадать в репозиторий
+
+    # IDE-specific files for other editors
+    .vscode/
+    *.swp
+    *.swo
